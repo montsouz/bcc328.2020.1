@@ -19,3 +19,6 @@ rule token = parse
   | '+'               { PLUS }
   | eof               { EOF }
   | _                 { illegal_character (Location.curr_loc lexbuf) (L.lexeme_char lexbuf 0) }
+  | '<'               { LT } 
+    | '<'               { LT }  
+      | '<'               { LT }   
